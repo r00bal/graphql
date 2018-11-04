@@ -3,6 +3,7 @@
 /server/node_modules
 yarn-error.log
 /server/package-lock.json
+/server/credentils.js
 # Build directory
 /public
 .DS_Store
