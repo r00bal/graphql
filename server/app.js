@@ -2,9 +2,13 @@ const express = require("express");
 const graphqlHTTP = require("express-graphql");
 const schema = require("./schema/schema");
 const mongoose = require("mongoose");
+const cors = require("cors");
 const { user, pass } = require("./credentils.js");
 
 const app = express();
+
+// allow corss-origin request
+app.use(cors());
 
 // connect to mlab database
 mongoose.connect(
